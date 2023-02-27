@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@kubernetes/client-node": "^0.18.1",
+    "commander": "^10.0.0"
+  }
+}
