@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+const { program } = require("commander");
+
+
+program
+  .description('v')
+  // .argument('<string>', 'string to split')
+  .option('--generate-new-secret', 'Generate a new secret', true)
+  .action((str, options) => {
+    console.log(`Initializing the config path ..`);
+  });
+  
+program.parse(process.argv);

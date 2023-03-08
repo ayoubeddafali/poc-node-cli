@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+const { program } = require("commander");
+
+program
+  .description('Deploy the applications')
+  .argument('[cluster]', 'Target cluster (sc | wc)', "sc")
+  .option('--sync', 'Synchronize', false)
+  .option('--skip-template-validate', 'Skip template validation', false)
+  .action((cluster, options) => {
+    console.log(`Deploy apps to ${cluster} cluster`);
+  });
+  
+program.parse(process.argv);

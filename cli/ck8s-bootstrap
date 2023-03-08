@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+const { program } = require("commander");
+
+program
+  .description('Bootstrap the cluster')
+  .argument('[cluster]', 'Target cluster (sc | wc)', "sc")
+  .action((cluster) => {
+    console.log(`Bootstraping ${cluster} cluster ..`);
+  });
+
+program.parse(process.argv);

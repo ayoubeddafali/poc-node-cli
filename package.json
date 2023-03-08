@@ -1,6 +1,11 @@
 {
+  "name": "ck8s",
+  "version": "0.0.1",
   "dependencies": {
     "@kubernetes/client-node": "^0.18.1",
     "commander": "^10.0.0"
+  },
+  "bin": {
+    "ck8s": "cli/main.js"
   }
 }
